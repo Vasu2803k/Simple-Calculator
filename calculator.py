@@ -1,4 +1,4 @@
-from sqlite3 import OperationalError
+
 from tkinter import *
 
 root=Tk()
