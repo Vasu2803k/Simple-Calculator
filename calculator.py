@@ -3,7 +3,7 @@ from tkinter import *
 
 root=Tk()
 root.title("Simple Calculator")
- 
+root.iconbitmap("D:\SDE\Py\Calc1.ico")
 input=Entry(root, width=35, borderwidth=5)
 input.grid(row=0,column=0,columnspan=3,padx=10,pady=10)
 
@@ -74,12 +74,12 @@ button_7=Button(root, text="7",padx=40,pady=20, command=lambda: button_click(7))
 button_8=Button(root, text="8",padx=40,pady=20, command=lambda: button_click(8))
 button_9=Button(root, text="9",padx=40,pady=20, command=lambda: button_click(9))
 button_0=Button(root, text="0",padx=40,pady=20, command=lambda: button_click(0))
-button_clear=Button(root, text="clear",padx=79,pady=20, command=button_clear)
-button_add=Button(root, text="+",padx=39,pady=20, command=button_add)
-button_equal=Button(root, text="=",padx=87,pady=20, command=button_equal)
-button_mul=Button(root, text="*",padx=40,pady=20, command=button_mul)
-button_div=Button(root, text="/",padx=40,pady=20, command=button_div)
-button_sub=Button(root, text="-",padx=40,pady=20, command=button_sub)
+button_clear=Button(root, text=" AC ",padx=80,pady=20, command=button_clear,bg="Red")
+button_add=Button(root, text="+",padx=39,pady=20, command=button_add,bg="yellow")
+button_equal=Button(root, text="=",padx=87,pady=20, command=button_equal,bg="blue")
+button_mul=Button(root, text="*",padx=40,pady=20, command=button_mul,bg="pink")
+button_div=Button(root, text="/",padx=40,pady=20, command=button_div,bg="lightblue")
+button_sub=Button(root, text="-",padx=40,pady=20, command=button_sub,bg="yellow")
 
 button_1.grid(row=3,column=0)
 button_2.grid(row=3,column=1)
